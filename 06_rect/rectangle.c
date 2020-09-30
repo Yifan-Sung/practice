@@ -26,29 +26,17 @@ struct rectangle {
 
 rectangle canonicalize(rectangle r) {
   //WRITE THIS FUNCTION
-  if((r.width<0) || (r.height<0))
+  if (r.width<0)
     {
-      if(r.width<0)
-	{
-	  r.x=r.x+r.width;
-	  r.width=-(r.width);
-	  if(r.height<0)
-	    {
-	      r.y=r.y+r.height;
-	      r.height=-(r.height);
-	      return r;
-	    }
-	  else
-	    return r;
-	}
-      else
-	{
-	  r.y=r.y+r.height;
-	  r.height=-(r.height);
-	  return r;
-	}
+      r.x=r.x+r.width;
+      r.width=-r.width;
     }
-  else
+  if (r.height<0)
+    {
+      r.y=r.y+r.height;
+      r.height=-r.height;
+    }
+
   return r;
 }
 
@@ -58,8 +46,14 @@ rectangle intersection(rectangle r1, rectangle r2) {
   r1=canonicalize(r1);
   r2=canonicalize(r2);
   rectangle ans;
-  if((r1.x>=r2.x+r2.width) || (r1.y>=r2.y+r2.height) || (r2.x>=r1.x+r1.width) || (r2.y>=r1.y+r1.height))
-    ans.width=0;
+  if((max(r1.x+r1.width,r2.x)==r2.x) || (max(r2.x+r2.width,r1.x)==r1.x))
+    {
+    ans.width=ans.height=0;
+    }
+  else if ((max(r1.y+r1.height,r2.y)==r2.y) || (max(r2.y+r2.height,r1.y)==r1.y))
+    {
+      ans.width=ans.height=0;
+    }
   else
     {
       ans.x=max(r1.x,r2.x);
