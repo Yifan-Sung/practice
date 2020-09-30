@@ -46,11 +46,11 @@ rectangle intersection(rectangle r1, rectangle r2) {
   r1=canonicalize(r1);
   r2=canonicalize(r2);
   rectangle ans;
-  if((max(r1.x+r1.width,r2.x)==r2.x) || (max(r2.x+r2.width,r1.x)==r1.x))
+  if((r1.x>r2.x+r2.width) || (r1.y>r2.y+r2.height))
     {
     ans.width=ans.height=0;
     }
-  else if ((max(r1.y+r1.height,r2.y)==r2.y) || (max(r2.y+r2.height,r1.y)==r1.y))
+  else if ((r2.x>r1.x+r1.width) || (r2.y>r1.y+r1.width))
     {
       ans.width=ans.height=0;
     }
