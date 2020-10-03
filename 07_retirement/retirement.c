@@ -5,10 +5,10 @@ struct _retire_info {
   int months;
   double contribution;
   double rate_of_return;
-}; typedef struct _retire_info reinfo;
+}; typedef struct _retire_info retire_info;
 
 
-void retirement (int startAge,double initial,reinfo working, reinfo retired) {
+void retirement (int startAge,double initial,retire_info working, retire_info retired) {
 
   int mon=startAge*12+3;
   int start=startAge*12+3;
@@ -37,8 +37,8 @@ void retirement (int startAge,double initial,reinfo working, reinfo retired) {
 int main() {
   /* My first C programe */
 
-  reinfo working;
-  reinfo retired;
+  retire_info working;
+  retire_info retired;
 
   working.months = 489;
   working.contribution = 1000;
