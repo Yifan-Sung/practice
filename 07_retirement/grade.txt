@@ -1,13 +1,13 @@
-Grading at Sat Oct  3 07:01:20 UTC 2020
+Grading at Sat Oct  3 07:05:57 UTC 2020
 Attempting to compile retirement.c
 Checking for struct _retire_info
-not found
+Found on line 4, column 1 
 Checking for field int months
-not found
+Found on line 5, column 3 
 Checking for field double contribution
-not found
+Found on line 6, column 3 
 Checking for field double rate_of_return
-not found
+Found on line 7, column 3 
 Checking for typedef of struct _retire_info to retire_info
 not found
 Checking for void retirement (int startAge, double initial,  retire_info working,  retire_info retired)
