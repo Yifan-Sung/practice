@@ -17,7 +17,7 @@ void retirement (int startAge,double initial,retire_info working, retire_info re
   int Age=startAge;
 
   for(int i = start; i < working.months+start; i++) {
-    printf("Age %d month %d you have %.2lf\n", Age, mon%12, balance);
+    printf("Age  %d month %2d you have %.2lf\n", Age, mon%12, balance);
     balance = balance*working.rate_of_return+working.contribution+balance;
     mon = mon+1;
     Age=mon/12;
@@ -25,7 +25,7 @@ void retirement (int startAge,double initial,retire_info working, retire_info re
 
   int m=mon;
   for(int j=m+1;j<=m+retired.months;j++){
-    printf("Age %d month %d you have %.2lf\n",Age,mon%12,balance);
+    printf("Age  %d month %2d you have %.2lf\n",Age,mon%12,balance);
     balance=balance*retired.rate_of_return+retired.contribution+balance;
     mon=mon+1;
     Age=mon/12;
