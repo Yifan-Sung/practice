@@ -1,0 +1,54 @@
+aaaaa bbbbb
+bbbbb aaaaa
+
+aaaaa bbbbc
+bbbbc aaaaa
+
+aaaaa bbbcc
+bbbcc aaaaa
+
+aaaaa bbcde
+bbcde aaaaa
+
+aaaaa bcdef
+bcdef aaaaa
+
+aaaab bbbbb
+aaaab bbbbc
+aaaab bbbcc
+aaaab bbccd
+aaaab bcdef
+
+aaabb bbbbb
+aaabb bbbbc
+aaabb bbbcc
+aaabb bbccd
+aaabb bcdef
+
+aabbc bbbbb
+aabbc bbbbc
+aabbc bbbcc
+aabbc bbccd
+aabbc bcdef
+
+abcde bbbbb
+abcde bbbbc
+abcde bbccd
+abcde bbbcc
+abcde bcdef
+
+aaabb bbbbc
+aabbb aaabb
+aaabc aaabb
+ababa babab
+aabbb aaccc
+abcda abcde
+abcda abcdd
+
+aaaaaa bbbbbb
+aaaa bbbb
+aaaaa bbbbb ccccc
+aaaaa
+aaaaa aaaaaa
+aaaaaa aaaaa
+aaaaa aaaa
