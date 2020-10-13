@@ -2,8 +2,10 @@
 #include<stdlib.h>
 
 size_t maxSeq(int * array,size_t n){
-  if (n<=0 || array==NULL)
+  if (n<0 || array==NULL)
     return EXIT_FAILURE;
+  if (n==0)
+    return 0;
   int count=1,temp=1;
   for (int i=1;i<n;i++){
     if (array[i]>array[i-1])
