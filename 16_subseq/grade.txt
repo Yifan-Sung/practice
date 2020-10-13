@@ -1,0 +1,13 @@
+Grading at Tue Oct 13 04:57:35 UTC 2020
+Attempting to compile maxSeq.c 
+maxSeq.c: In function ‘maxSeq’:
+maxSeq.c:8:19: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   for (int i=1;i<n,i++){
+                   ^
+maxSeq.c:8:23: error: expected ‘;’ before ‘)’ token
+   for (int i=1;i<n,i++){
+                       ^
+cc1: all warnings being treated as errors
+The code did not compile!
+
+Overall Grade: F
