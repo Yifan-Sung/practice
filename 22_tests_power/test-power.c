@@ -10,6 +10,10 @@ int main(void){
     return EXIT_FAILURE;
   if (power(0,1)!=0)
     return EXIT_FAILURE;
+  if (power(5,0)!=1)
+    return EXIT_FAILURE;
+  if (power(0,5)!=0)
+    return EXIT_FAILURE;
   if (power(5,2)!=25)
     return EXIT_FAILURE;
   if (power(2*3,2)!=36)
