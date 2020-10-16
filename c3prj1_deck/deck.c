@@ -10,11 +10,11 @@ int com (card_t c1,card_t c2){
 }
 
 void print_hand(deck_t * hand){
-  card_t ** card =hand -> cards ;
-  card_t  card1;
+  //card_t ** card =hand -> cards ;
+  //card_t  card1;
   for (size_t i=0 ;i<(hand -> n_cards );i++){
-    card1=**(card +i);
-    print_card(card1);
+    // card1=**(card +i);
+    print_card(*(hand->cards[i]));
   }
 }
 
