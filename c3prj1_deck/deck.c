@@ -44,6 +44,7 @@ void assert_full_deck(deck_t * d) {
   card_t ** card =d -> cards;
   card_t c;
   int count;
+
   for (size_t i=0;i<d -> n_cards;i++){
     c=**(card+i);
     count=0;
@@ -54,6 +55,7 @@ void assert_full_deck(deck_t * d) {
   }
 }
 
+/*
 void add_card_to(deck_t * deck,card_t c){
   card_t * c1=malloc(sizeof(*c1));
   c1->value = c.value;
@@ -108,3 +110,5 @@ void free_deck(deck_t * deck){
   free(deck->cards);
   free(deck);
 }
+
+ */
