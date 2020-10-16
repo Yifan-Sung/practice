@@ -1,6 +1,7 @@
-Grading at Fri Oct 16 03:57:32 UTC 2020
+Grading at Fri Oct 16 04:27:46 UTC 2020
 Compiling your code
-rm -f test poker cards.o my-test-main.o *~
+rm test poker cards.o my-test-main.o *~
+Makefile:10: recipe for target 'clean' failed
 cc -ggdb3 -Wall -Werror -pedantic -std=gnu99   -c -o deck.o deck.c
 cc -ggdb3 -Wall -Werror -pedantic -std=gnu99   -c -o eval.o eval.c
 cc -ggdb3 -Wall -Werror -pedantic -std=gnu99   -c -o cards.o cards.c
